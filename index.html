@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no" />
+  <title>Sunken Tomb — Vertical Escape</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <canvas id="game"></canvas>
+
+  <div id="hud">
+    <div class="brand"><span class="gem"></span><strong>SUNKEN TOMB</strong></div>
+    <div class="top-actions">
+      <div id="height" class="height"><span>DEPTH</span><b>0 m</b></div>
+      <button id="soundBtn" class="icon-btn" aria-label="Toggle sound">♪</button>
+      <button id="pauseBtn" class="icon-btn" aria-label="Pause">Ⅱ</button>
+    </div>
+  </div>
+
+  <div id="objective"><span>ASCEND</span><b>Reach the surface</b></div>
+  <div id="message" class="message hidden"></div>
+
+  <div id="startScreen" class="overlay">
+    <div class="title-mark"><span>☥</span></div>
+    <div class="eyebrow">AN ANCIENT CHALLENGE</div>
+    <h1>SUNKEN<br><em>TOMB</em></h1>
+    <p>Climb the forgotten temple.<br>Do not look back.</p>
+    <button id="startBtn" class="primary">ENTER THE TOMB</button>
+    <div class="controls"><kbd>A</kbd><kbd>D</kbd> <span>MOVE</span> <kbd>W</kbd><span>JUMP</span></div>
+  </div>
+
+  <div id="pauseScreen" class="overlay hidden">
+    <div class="eyebrow">THE TOMB WAITS</div>
+    <h2>Paused</h2>
+    <button id="resumeBtn" class="primary">CONTINUE</button>
+  </div>
+
+  <div id="touchLeft" class="touch-control">‹</div>
+  <div id="touchRight" class="touch-control">›</div>
+  <button id="touchJump" class="touch-jump">↑</button>
+
+  <div id="rotateNotice"><div>↻</div><b>Rotate device</b><span>The tomb is wider than the screen</span></div>
+
+  <script src="game.js"></script>
+</body>
+</html>
